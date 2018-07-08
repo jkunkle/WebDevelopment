@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="homepage_styles.css">
+</head>
+<body>
+
+<!-- Header -->
+<div class="header"> 
+    <!--<div class="topmain">-->
+    <img src="banner.png" style="height:200px"></div>
+    <!--</div>-->
+    <!--<div class="topside">
+    <img src="josh_istanbul.jpeg" style="height:100px"></div>
+    </div>-->
+</div>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <button class="button" onclick="myFunction('Profile')">Profile</button>
+  <button class="button" onclick="myFunction('Work history')">Work history</button>
+  <button class="button" onclick="myFunction('Interests')">Interests</button>
+  <button class="button" onclick="myFunction('Hobbies')">Hobbies</button>
+</div >
+
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div id="Profile" class="main" >
+      <h2>PROFILE</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <br>
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
+  <div id="Work history" class="main" style="display:none" >
+      <h2>WORK HISTORY</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <br>
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
+  <div id="Interests" class="main" style="display:none" >
+      <h2>INTERESTS</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <br>
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
+  <div class="side">
+      <h2>About Me</h2>
+      <h5>Photo of me:</h5>
+      <div> Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+      <h3>More Text</h3>
+      <p>Lorem ipsum dolor sit ame.</p>
+      <div class="fakeimg" style="height:60px;">Image</div><br>
+      <div class="fakeimg" style="height:60px;">Image</div><br>
+      <div class="fakeimg" style="height:60px;">Image</div>
+  </div>
+</div>
+
+<script>
+function myFunction(panel_name) {
+    console.log(panel_name);
+    all_main_panels = document.getElementsByClassName("main");
+    for (i = 0; i < all_main_panels.length; i++) { 
+        if( all_main_panels[i].id == panel_name ) {
+            all_main_panels[i].style.display = "block";
+        }
+        else {
+            all_main_panels[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+
+</body>
+</html>
